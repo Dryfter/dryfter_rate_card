@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dryfter Homes — Media Kit 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1410;
+    --cream: #f7f3ec;
+    --warm: #e8dfd0;
+    --gold: #c9a84c;
+    --gold-light: #e8c96a;
+    --terracotta: #c4603b;
+    --sage: #6b8f71;
+    --text-muted: #6b5f52;
+    --border: #d4c9b8;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .page {
+    width: 850px;
+    margin: 0 auto;
+    background: var(--cream);
+  }
+
+  /* ─── COVER ─── */
+  .cover {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+    padding: 60px;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 70%);
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: 80px; left: -80px;
+    width: 350px; height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(196,96,59,0.12) 0%, transparent 70%);
+  }
+
+  .cover-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.4);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+
+  .cover-content { z-index: 1; }
+
+  .cover-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(247,243,236,0.45);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .cover-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .cover-name span { color: var(--gold); font-style: italic; }
+
+  .cover-title {
+    font-size: 15px;
+    color: rgba(247,243,236,0.6);
+    font-weight: 300;
+    margin-top: 20px;
+    max-width: 420px;
+    line-height: 1.7;
+  }
+
+  .cover-stats {
+    display: flex;
+    gap: 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(247,243,236,0.12);
+    padding-top: 40px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .cover-stat {
+    flex: 1;
+    padding-right: 32px;
+    border-right: 1px solid rgba(247,243,236,0.1);
+    margin-right: 32px;
+  }
+  .cover-stat:last-child { border-right: none; margin-right: 0; }
+
+  .cover-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1;
+  }
+  .cover-stat-num span { color: var(--gold); }
+
+  .cover-stat-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(247,243,236,0.4);
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .cover-niche-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .niche-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(247,243,236,0.5);
+    background: rgba(247,243,236,0.06);
+    padding: 5px 12px;
+    border-radius: 2px;
+  }
+
+  .cover-year {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    color: rgba(247,243,236,0.2);
+    letter-spacing: 0.1em;
+  }
+
+  /* ─── SECTIONS ─── */
+  .section {
+    padding: 70px 60px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .section-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .section-body {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 620px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px 0;
+  }
+
+  /* ─── CONTENT PILLARS ─── */
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .pillar-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 20px;
+  }
+
+  .pillar-icon {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .pillar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .pillar-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ─── PLATFORMS ─── */
+  .platform-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 40px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .platform-cell {
+    background: white;
+    padding: 32px 24px;
+    text-align: center;
+    position: relative;
+  }
+  .platform-cell::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 1px; height: 100%;
+    background: var(--border);
+  }
+  .platform-cell:last-child::after { display: none; }
+
+  .platform-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .platform-icon.ig { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366); }
+  .platform-icon.tt { background: #010101; }
+  .platform-icon.fb { background: #1877f2; }
+  .platform-icon svg { width: 18px; height: 18px; fill: white; }
+
+  .platform-name {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .platform-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .platform-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  .big-stat-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .big-stat {
+    flex: 1;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  .big-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .big-stat-num .unit { font-size: 20px; color: var(--gold); }
+
+  .big-stat-desc {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  /* ─── WHAT'S INCLUDED ─── */
+  .included-list {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .included-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 14px 18px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .included-item::before {
+    content: '✓';
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ─── RATE CARD ─── */
+  .rate-section {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 70px 60px;
+  }
+  .rate-section .section-label { color: var(--gold); }
+  .rate-section .section-label::after { background: rgba(247,243,236,0.1); }
+  .rate-section .section-headline { color: var(--cream); }
+
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .package-card {
+    border: 1px solid rgba(247,243,236,0.1);
+    border-radius: 4px;
+    padding: 28px 24px;
+    position: relative;
+  }
+  .package-card.featured {
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.05);
+    grid-column: span 2;
+  }
+  .package-card.ambassador {
+    grid-column: span 2;
+    border-color: var(--terracotta);
+    background: rgba(196,96,59,0.05);
+  }
+
+  .package-badge {
+    position: absolute;
+    top: -1px; right: 16px;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+  }
+
+  .package-badge.red { background: var(--terracotta); color: white; }
+
+  .package-name {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .package-card.ambassador .package-name { color: var(--terracotta); }
+
+  .package-num {
+    font-size: 11px;
+    color: rgba(247,243,236,0.3);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+
+  .package-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .package-desc {
+    font-size: 12px;
+    color: rgba(247,243,236,0.45);
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .package-includes {
+    list-style: none;
+    font-size: 12px;
+    color: rgba(247,243,236,0.55);
+    line-height: 2;
+  }
+  .package-includes li::before {
+    content: '— ';
+    color: var(--gold);
+    opacity: 0.6;
+  }
+  .package-card.ambassador .package-includes li::before { color: var(--terracotta); opacity: 0.8; }
+
+  /* ─── ADD-ONS TABLE ─── */
+  .addons-section {
+    margin-top: 56px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(247,243,236,0.08);
+  }
+
+  .addons-sub-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .addons-sub-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(247,243,236,0.08);
+  }
+
+  .addons-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .addon-group-title {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(247,243,236,0.35);
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(247,243,236,0.06);
+  }
+
+  .addon-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(247,243,236,0.05);
+    font-size: 12px;
+  }
+  .addon-row:last-child { border-bottom: none; }
+
+  .addon-label { color: rgba(247,243,236,0.65); }
+  .addon-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cream);
+  }
+
+  /* ─── EXCLUSIVITY ─── */
+  .exclusivity-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .excl-card {
+    flex: 1;
+    background: rgba(247,243,236,0.04);
+    border: 1px solid rgba(247,243,236,0.08);
+    border-radius: 4px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .excl-period {
+    font-size: 13px;
+    color: rgba(247,243,236,0.5);
+    margin-bottom: 8px;
+  }
+  .excl-pct {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  /* ─── COLLAB CATEGORIES ─── */
+  .collab-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .collab-tag {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 8px 16px;
+  }
+
+  /* ─── TERMS ─── */
+  .terms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .term-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 20px;
+  }
+  .term-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .term-title {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+  }
+  .term-body {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    background: var(--warm);
+    padding: 48px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .footer-name span { color: var(--gold); font-style: italic; }
+  .footer-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+  }
+  .footer-contact {
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 2.1;
+  }
+  .footer-contact a {
+    color: var(--terracotta);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .note-box {
+    margin-top: 40px;
+    padding: 24px 28px;
+    background: rgba(201,168,76,0.08);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+    font-size: 12px;
+    color: rgba(247,243,236,0.5);
+    line-height: 1.7;
+  }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="cover-content">
+      <div class="cover-tag">Brand Partnership Media Kit · 2026</div>
+      <div class="cover-eyebrow">Short-Term Rental Host · Airbnb Educator · Hospitality Entrepreneur</div>
+      <div class="cover-name">Dryfter<br><span>Homes</span></div>
+      <div class="cover-title">Helping Airbnb hosts, short-term rental operators, and real estate investors build profitable, scalable vacation rental businesses.</div>
+
+      <div class="cover-stats">
+        <div class="cover-stat">
+          <div class="cover-stat-num">915<span>K+</span></div>
+          <div class="cover-stat-label">Total Followers</div>
+        </div>
+        <div class="cover-stat">
+          <div class="cover-stat-num">580<span>K</span></div>
+          <div class="cover-stat-label">TikTok</div>
+        </div>
+        <div class="cover-stat">
+          <div class="cover-stat-num">310<span>K</span></div>
+          <div class="cover-stat-label">Instagram</div>
+        </div>
+        <div class="cover-stat">
+          <div class="cover-stat-num">25<span>K</span></div>
+          <div class="cover-stat-label">Facebook</div>
+        </div>
+      </div>
+
+      <div class="cover-bottom">
+        <div class="cover-niche-tags">
+          <span class="niche-tag">Airbnb</span>
+          <span class="niche-tag">Short-Term Rentals</span>
+          <span class="niche-tag">Real Estate Investing</span>
+          <span class="niche-tag">Hospitality</span>
+          <span class="niche-tag">STR Strategy</span>
+        </div>
+        <div class="cover-year">© 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <div class="section-label">About</div>
+    <div class="section-headline">Education-first.<br>Results-driven.</div>
+    <div class="divider"></div>
+    <div class="section-body">
+      <p>Dryfter Homes creates content for Airbnb hosts, short-term rental operators, hospitality professionals, and real estate investors. Through educational content, property transformations, behind-the-scenes operations, and real-world hosting experiences, Dryfter Homes helps audiences increase revenue, improve guest experiences, and build successful short-term rental businesses.</p>
+      <br>
+      <p>Unlike general real estate creators, Dryfter Homes serves a <strong>highly targeted audience</strong> actively investing in, operating, or scaling vacation rental properties — making every sponsored placement immediately relevant and actionable.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT PILLARS -->
+  <div class="section">
+    <div class="section-label">Content Pillars</div>
+    <div class="section-headline">What the<br>audience comes for.</div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🏠</div>
+        <div class="pillar-title">Hosting & Operations</div>
+        <div class="pillar-desc">Guest communication, automation, systems, and day-to-day hosting best practices.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📈</div>
+        <div class="pillar-title">Revenue Optimization</div>
+        <div class="pillar-desc">Pricing strategies, occupancy growth, and maximizing profitability from every listing.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🛋️</div>
+        <div class="pillar-title">Property Design</div>
+        <div class="pillar-desc">Transformations, furnishings, amenities, and guest-focused improvements.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">⭐</div>
+        <div class="pillar-title">Guest Experience</div>
+        <div class="pillar-desc">Creating memorable stays, five-star reviews, and repeat guest strategies.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">⚙️</div>
+        <div class="pillar-title">Host Technology</div>
+        <div class="pillar-desc">Software, smart home tools, and operational efficiency for modern hosts.</div>
+      </div>
+      <div class="pillar-card" style="background:var(--warm); border-color:var(--gold);">
+        <div class="pillar-icon">🤝</div>
+        <div class="pillar-title">Ideal Partner?</div>
+        <div class="pillar-desc" style="color:var(--ink);">Your product should help hosts earn more, operate smarter, or deliver better guest experiences.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLATFORMS -->
+  <div class="section">
+    <div class="section-label">Platform Presence</div>
+    <div class="section-headline">Where the<br>audience lives.</div>
+
+    <div class="platform-row">
+      <div class="platform-cell">
+        <div class="platform-icon tt">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.84 1.56V6.8a4.85 4.85 0 01-1.07-.11z"/></svg>
+        </div>
+        <div class="platform-name">TikTok</div>
+        <div class="platform-num">580K+</div>
+        <div class="platform-sub">Followers</div>
+      </div>
+      <div class="platform-cell">
+        <div class="platform-icon ig">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        <div class="platform-name">Instagram</div>
+        <div class="platform-num">310K+</div>
+        <div class="platform-sub">Followers</div>
+      </div>
+      <div class="platform-cell">
+        <div class="platform-icon fb">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="platform-name">Facebook</div>
+        <div class="platform-num">25K+</div>
+        <div class="platform-sub">Followers</div>
+      </div>
+    </div>
+
+    <div class="big-stat-row">
+      <div class="big-stat">
+        <div class="big-stat-num">915<span class="unit">K+</span></div>
+        <div class="big-stat-desc">Combined Reach</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num">100<span class="unit">%</span></div>
+        <div class="big-stat-desc">STR-Focused Niche</div>
+      </div>
+      <div class="big-stat">
+        <div class="big-stat-num">3</div>
+        <div class="big-stat-desc">Active Platforms</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHO WE WORK WITH -->
+  <div class="section">
+    <div class="section-label">Who We Work With</div>
+    <div class="section-headline">Ideal partnership<br>categories.</div>
+    <div class="section-body">Every brand that partners with Dryfter Homes reaches an audience of active decision-makers in the short-term rental space — hosts who are already spending on tools, furnishings, and services to grow their businesses.</div>
+    <div class="collab-tags">
+      <span class="collab-tag">Property Management Software</span>
+      <span class="collab-tag">Dynamic Pricing Platforms</span>
+      <span class="collab-tag">Smart Home & Security Tech</span>
+      <span class="collab-tag">Furniture & Home Décor</span>
+      <span class="collab-tag">Cleaning & Turnover Services</span>
+      <span class="collab-tag">Travel & Hospitality Brands</span>
+      <span class="collab-tag">STR Insurance Providers</span>
+      <span class="collab-tag">Financial & Real Estate Services</span>
+      <span class="collab-tag">Host Education Platforms</span>
+      <span class="collab-tag">Vacation Rental Industry Vendors</span>
+    </div>
+  </div>
+
+  <!-- WHAT'S INCLUDED -->
+  <div class="section">
+    <div class="section-label">What's Included</div>
+    <div class="section-headline">Every partnership<br>includes.</div>
+    <div class="section-body">Unless otherwise specified, all brand partnerships include the following deliverables as standard.</div>
+    <div class="included-list">
+      <div class="included-item">Premium vertical video (30–90 seconds)</div>
+      <div class="included-item">Cross-posting to TikTok, Instagram & Facebook</div>
+      <div class="included-item">Brand tagging across all platforms</div>
+      <div class="included-item">Caption collaboration & approval</div>
+      <div class="included-item">One revision round included</div>
+      <div class="included-item">Content designed for native platform performance</div>
+    </div>
+  </div>
+
+  <!-- RATE CARD -->
+  <div class="rate-section">
+    <div class="section-label">Partnership Packages</div>
+    <div class="section-headline" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; line-height:1.2; margin-bottom:12px; color:var(--cream);">Investment &<br>Deliverables.</div>
+    <div style="font-size:14px; color:rgba(247,243,236,0.5); max-width:520px; line-height:1.7;">Four partnership tiers designed to fit different campaign goals — from brand testing to long-term ambassador relationships.</div>
+
+    <div class="packages-grid">
+
+      <!-- Option 1 -->
+      <div class="package-card">
+        <div class="package-name">Option 1</div>
+        <div class="package-num">Social Integration</div>
+        <div class="package-price">$1,500</div>
+        <div class="package-desc">Best for brands testing creative alignment.</div>
+        <ul class="package-includes">
+          <li>1 premium vertical video</li>
+          <li>Cross-platform posting</li>
+          <li>Organic reposting rights</li>
+          <li style="color:rgba(247,243,236,0.3);">Paid advertising rights not included</li>
+        </ul>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="package-card">
+        <div class="package-name">Option 2</div>
+        <div class="package-num">Performance Package</div>
+        <div class="package-price">$2,500</div>
+        <div class="package-desc">Designed for brands planning paid amplification.</div>
+        <ul class="package-includes">
+          <li>Everything in Option 1</li>
+          <li>6-month paid media rights</li>
+          <li>Raw master file delivery</li>
+        </ul>
+      </div>
+
+      <!-- Option 3 -->
+      <div class="package-card featured">
+        <div class="package-badge">Most Popular</div>
+        <div class="package-name">Option 3</div>
+        <div class="package-num">Campaign Package</div>
+        <div class="package-price">$4,500</div>
+        <div class="package-desc">For product launches and deeper integrations across platforms.</div>
+        <ul class="package-includes">
+          <li>3 premium vertical videos</li>
+          <li>Cross-platform posting on all channels</li>
+          <li>6-month paid usage rights</li>
+          <li>Creative strategy call included</li>
+        </ul>
+      </div>
+
+      <!-- Option 4 -->
+      <div class="package-card ambassador">
+        <div class="package-badge red">Long-Term</div>
+        <div class="package-name">Option 4</div>
+        <div class="package-num">Brand Ambassador Partnership</div>
+        <div class="package-price">Starting at $8,000+</div>
+        <div class="package-desc">For brands seeking sustained visibility within the short-term rental industry.</div>
+        <ul class="package-includes">
+          <li>Ongoing social content series</li>
+          <li>Product demonstrations & tutorials</li>
+          <li>Educational content integration</li>
+          <li>Industry event appearances</li>
+          <li>Multi-month campaign cadence</li>
+          <li>Strategic brand alignment & exclusivity</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- ADD-ONS -->
+    <div class="addons-section">
+      <div class="addons-sub-label">Add-On Services</div>
+      <div class="addons-two-col">
+
+        <div>
+          <div class="addon-group-title">Paid Media Licensing</div>
+          <div class="addon-row"><span class="addon-label">3 Months</span><span class="addon-price">$1,000</span></div>
+          <div class="addon-row"><span class="addon-label">6 Months</span><span class="addon-price">$1,500</span></div>
+          <div class="addon-row"><span class="addon-label">12 Months</span><span class="addon-price">$2,500</span></div>
+          <div class="addon-row"><span class="addon-label">24 Months</span><span class="addon-price">$4,000</span></div>
+
+          <div class="addon-group-title" style="margin-top:28px;">Amplification</div>
+          <div class="addon-row"><span class="addon-label">Whitelisting / Spark Ads (per platform)</span><span class="addon-price">$1,000</span></div>
+          <div class="addon-row"><span class="addon-label">Raw Footage Access (select clips)</span><span class="addon-price">$750</span></div>
+        </div>
+
+        <div>
+          <div class="addon-group-title">Placement & Visibility</div>
+          <div class="addon-row"><span class="addon-label">Pinned Post — 30 Days</span><span class="addon-price">$500</span></div>
+          <div class="addon-row"><span class="addon-label">Pinned Post — 90 Days</span><span class="addon-price">$1,000</span></div>
+          <div class="addon-row"><span class="addon-label">Link in Bio — 24 Hours</span><span class="addon-price">$250</span></div>
+          <div class="addon-row"><span class="addon-label">Link in Bio — 7 Days</span><span class="addon-price">$500</span></div>
+          <div class="addon-row"><span class="addon-label">Link in Bio — 30 Days</span><span class="addon-price">$1,000</span></div>
+          <div class="addon-row"><span class="addon-label">IG Story Package (3 Frames)</span><span class="addon-price">$400</span></div>
+          <div class="addon-row"><span class="addon-label">IG Story Package w/ CTA & Link</span><span class="addon-price">$750</span></div>
+        </div>
+
+      </div>
+
+      <!-- EXCLUSIVITY -->
+      <div class="addons-sub-label" style="margin-top:48px;">Category Exclusivity Add-On</div>
+      <div class="exclusivity-row">
+        <div class="excl-card">
+          <div class="excl-period">30 Days</div>
+          <div class="excl-pct">+15%</div>
+        </div>
+        <div class="excl-card">
+          <div class="excl-period">90 Days</div>
+          <div class="excl-pct">+25%</div>
+        </div>
+        <div class="excl-card">
+          <div class="excl-period">180 Days</div>
+          <div class="excl-pct">+40%</div>
+        </div>
+        <div class="excl-card">
+          <div class="excl-period">12 Months</div>
+          <div class="excl-pct">+75%</div>
+        </div>
+      </div>
+
+      <div class="note-box">
+        All rates are starting points and may vary based on campaign scope, revisions, and timeline. Exclusivity pricing is applied as a percentage increase on top of the base package rate. A 50% deposit is required to begin production. Remaining balance is due prior to content publishing. Typical turnaround: 7–14 days following product delivery and creative approval.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>
+      <div class="footer-name">Dryfter <span>Homes</span></div>
+      <div class="footer-sub">Short-Term Rental Creator · Dan Brett, Founder</div>
+    </div>
+    <div class="footer-contact">
+      <div>Partnership Inquiries</div>
+      <a href="mailto:dan@godryfter.com">dan@godryfter.com</a>
+      <div style="margin-top:4px; color:var(--text-muted);">@dryfterhomes · TikTok & Instagram</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
