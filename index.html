@@ -29,7 +29,8 @@
   }
 
   .page {
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
     margin: 0 auto;
     background: var(--cream);
   }
@@ -668,6 +669,50 @@
   .case-link.alt { background:var(--ink); }
   .case-link { display:inline-block; background:var(--terracotta); color:white; text-decoration:none; font-size:12px; font-weight:600; letter-spacing:0.08em; padding:14px 26px; border-radius:3px; }
   .case-section, .case-grid, .case-stat { break-inside:avoid; }
+
+  /* ─── MOBILE ─── */
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg { max-width: 100%; }
+  @media (max-width: 720px) {
+    body { font-size: 14px; overflow-x: hidden; }
+    .cover { padding: 36px 24px; min-height: auto; }
+    .cover-tag { margin-bottom: 28px; }
+    .cover-name { font-size: 52px; }
+    .cover-title { font-size: 14px; max-width: 100%; }
+    .cover-stats { flex-wrap: wrap; gap: 24px 0; margin-top: 36px; padding-top: 28px; }
+    .cover-stat { flex: 0 0 50%; border-right: none; margin-right: 0; padding-right: 12px; }
+    .cover-stat-num { font-size: 32px; }
+    .cover-bottom { flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 28px; }
+    .section, .rate-section { padding: 44px 24px; }
+    .section-headline { font-size: 28px; }
+    .section-label { margin-bottom: 24px; }
+    .pillars-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+    .pillar-card { padding: 18px 14px; }
+    .platform-row { grid-template-columns: 1fr; }
+    .platform-cell { padding: 24px 20px; }
+    .platform-cell::after { top: auto; bottom: 0; right: 0; width: 100%; height: 1px; }
+    .big-stat-row { flex-wrap: wrap; gap: 12px; }
+    .big-stat { flex: 1 1 calc(50% - 6px); padding: 22px 12px; }
+    .big-stat-num { font-size: 32px; }
+    .included-list { grid-template-columns: 1fr; }
+    .case-grid { grid-template-columns: 1fr; gap: 12px; }
+    .case-num { font-size: 38px; }
+    .case-links { flex-direction: column; }
+    .case-link { text-align: center; display: block; }
+    .packages-grid { grid-template-columns: 1fr; }
+    .package-card.featured, .package-card.ambassador { grid-column: span 1; }
+    .package-price { font-size: 32px; }
+    .addons-two-col { grid-template-columns: 1fr; gap: 28px; }
+    .addon-row { gap: 12px; align-items: flex-start; }
+    .addon-label { flex: 1; }
+    .addon-price { white-space: nowrap; }
+    .exclusivity-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .terms-grid { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; align-items: flex-start; gap: 24px; padding: 36px 24px; }
+    .footer-contact { text-align: left; }
+    .collab-tags { gap: 8px; }
+    .collab-tag { font-size: 11px; padding: 7px 12px; }
+  }
 </style>
 </head>
 <body>
@@ -683,11 +728,11 @@
 
       <div class="cover-stats">
         <div class="cover-stat">
-          <div class="cover-stat-num">1.45<span>M+</span></div>
+          <div class="cover-stat-num">1.35<span>M+</span></div>
           <div class="cover-stat-label">Total Followers</div>
         </div>
         <div class="cover-stat">
-          <div class="cover-stat-num">1.1<span>M+</span></div>
+          <div class="cover-stat-num">1<span>M+</span></div>
           <div class="cover-stat-label">TikTok</div>
         </div>
         <div class="cover-stat">
@@ -775,7 +820,7 @@
           <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.84 1.56V6.8a4.85 4.85 0 01-1.07-.11z"/></svg>
         </div>
         <div class="platform-name">TikTok</div>
-        <div class="platform-num">1.1M+</div>
+        <div class="platform-num">1M+</div>
         <div class="platform-sub">Followers</div>
       </div>
       <div class="platform-cell">
@@ -798,7 +843,7 @@
 
     <div class="big-stat-row">
       <div class="big-stat">
-        <div class="big-stat-num">1.45<span class="unit">M+</span></div>
+        <div class="big-stat-num">1.35<span class="unit">M+</span></div>
         <div class="big-stat-desc">Combined Reach</div>
       </div>
       <div class="big-stat">
