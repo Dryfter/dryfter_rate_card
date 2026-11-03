@@ -664,7 +664,9 @@
   .case-stat.hero .case-desc { color:rgba(247,243,236,0.5); }
   .case-meta { display:flex; gap:10px; flex-wrap:wrap; margin-top:28px; }
   .case-chip { font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); background:white; border:1px solid var(--border); border-radius:3px; padding:7px 14px; }
-  .case-link { display:inline-block; margin-top:28px; background:var(--terracotta); color:white; text-decoration:none; font-size:12px; font-weight:600; letter-spacing:0.08em; padding:14px 26px; border-radius:3px; }
+  .case-links { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+  .case-link.alt { background:var(--ink); }
+  .case-link { display:inline-block; background:var(--terracotta); color:white; text-decoration:none; font-size:12px; font-weight:600; letter-spacing:0.08em; padding:14px 26px; border-radius:3px; }
   .case-section, .case-grid, .case-stat { break-inside:avoid; }
 </style>
 </head>
@@ -872,7 +874,10 @@
       <span class="case-chip">Property Management Software</span>
     </div>
 
-    <a class="case-link" href="https://www.tiktok.com/t/ZPLuAuRbH/" target="_blank" rel="noopener">Watch the top-performing video →</a>
+    <div class="case-links">
+      <a class="case-link" href="https://www.tiktok.com/t/ZPLuAuRbH/" target="_blank" rel="noopener">Watch top TikTok →</a>
+      <a class="case-link alt" href="https://www.instagram.com/reel/Dac_WdVCoz9/" target="_blank" rel="noopener">Watch top Instagram Reel →</a>
+    </div>
   </div>
 
   <!-- RATE CARD -->
